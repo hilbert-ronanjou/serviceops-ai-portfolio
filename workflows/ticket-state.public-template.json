@@ -1,0 +1,101 @@
+{
+  "name": "ServiceOps notification - SANITIZED READING TEMPLATE",
+  "active": false,
+  "nodes": [
+    {
+      "id": "reading-node-1",
+      "name": "Receive verified state",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "serviceops-ticket-state",
+        "authentication": "headerAuth",
+        "responseMode": "lastNode",
+        "responseData": "firstEntryJson",
+        "options": {}
+      }
+    },
+    {
+      "id": "reading-node-2",
+      "name": "Validate and minimize",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        500,
+        300
+      ],
+      "parameters": {
+        "jsCode": "const b=$input.first().json.body; const keys=['notice_id','source_id','ticket_id','entity_id','recipient_id','status','revision','message']; if(!b || Object.keys(b).sort().join()!=keys.sort().join())throw Error('invalid_event_fields'); if(!/^[a-f0-9-]{36}$/.test(b.notice_id) || b.source_id!=='example-source')throw Error('invalid_event_identity'); for(const k of ['ticket_id','entity_id','recipient_id'])if(!Number.isInteger(b[k])||b[k]<=0)throw Error('invalid_event_integer'); const labels={1:'new',2:'assigned',3:'planned',4:'pending',5:'resolved',6:'closed',10:'approval_pending'}; if(!Number.isInteger(b.status)||!labels[b.status]||!/^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\+00:00$/.test(b.revision))throw Error('invalid_event_state'); const message=`Ticket #${b.ticket_id}: ${labels[b.status]}. Local TEST notification.`; if(b.message!==message)throw Error('invalid_event_message'); return [{json:{notice_id:b.notice_id,source_id:b.source_id,ticket_id:b.ticket_id,entity_id:b.entity_id,recipient_id:b.recipient_id,status:b.status,revision:b.revision,message}}];"
+      }
+    },
+    {
+      "id": "reading-node-3",
+      "name": "Deliver locally",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        760,
+        300
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "https://receiver.example.invalid/internal/deliver",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-N8n-Execution-Id",
+              "value": "={{ $execution.id }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ $json }}",
+        "options": {
+          "timeout": 1000
+        }
+      },
+      "retryOnFail": false
+    }
+  ],
+  "connections": {
+    "Receive verified state": {
+      "main": [
+        [
+          {
+            "node": "Validate and minimize",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate and minimize": {
+      "main": [
+        [
+          {
+            "node": "Deliver locally",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "saveDataSuccessExecution": "none",
+    "saveDataErrorExecution": "none",
+    "saveManualExecutions": false,
+    "saveExecutionProgress": false
+  },
+  "pinData": {}
+}

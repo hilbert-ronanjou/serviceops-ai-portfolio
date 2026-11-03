@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="550" viewBox="0 0 1400 550" role="img" aria-labelledby="title desc">
+<title id="title">GLPI 到 n8n 通知链：根据实际工作流配置绘制的结构示意图</title>
+<desc id="desc">非 n8n 界面截图。上方为原生GLPI验签和持久化，下方框中严格为实际三个n8n节点，通知效果由独立回执确认。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#405b72"/></marker></defs>
+<rect width="1400" height="550" rx="22" fill="#f4f7fb"/>
+<g font-family="Segoe UI,Microsoft YaHei,sans-serif" fill="#17354a"><text x="40" y="45" font-size="24" font-weight="700">GLPI 事件 → 可信后端 → n8n → 持久通知回执</text>
+<text x="40" y="77" font-size="16" fill="#687b8e">结构示意 · 来自实际 JSON 配置，非 n8n 界面截图 · 历史隔离测试，非在线发送</text>
+<g stroke="#c8d6e5" fill="white"><rect x="40" y="108" width="265" height="100" rx="12"/><rect x="395" y="108" width="350" height="100" rx="12"/><rect x="835" y="108" width="325" height="100" rx="12"/></g>
+<text x="65" y="145" font-size="21">GLPI 原生工单事件</text><text x="65" y="177" font-size="16">原生队列 / 签名 / 时间戳</text>
+<text x="420" y="145" font-size="21">FastAPI 可信接收</text><text x="420" y="177" font-size="16">HMAC 验签 → 真实归属及状态复核</text>
+<text x="860" y="145" font-size="21">PostgreSQL 持久记录</text><text x="860" y="177" font-size="16">事件 / 通知意图 / 不确定状态</text>
+<g stroke="#405b72" stroke-width="2" fill="none" marker-end="url(#arrow)"><path d="M305 157 H390"/><path d="M745 157 H830"/><path d="M1000 210 V250 H20 V380 H50"/></g>
+<text x="323" y="135" font-size="14">HTTP ①</text><text x="600" y="243" font-size="14">后端 worker 读取意图；专用内部凭据，HTTP ②</text>
+<rect x="35" y="280" width="1045" height="180" rx="16" fill="#e9f1fb" stroke="#83a8d5" stroke-dasharray="6 4"/>
+<text x="55" y="306" font-size="15">n8n 2.42.6 · 历史实际生产 Webhook 路径（本地隔离环境）</text>
+<g fill="white" stroke="#a4bad2"><rect x="55" y="325" width="290" height="110" rx="12"/><rect x="385" y="325" width="300" height="110" rx="12"/><rect x="725" y="325" width="330" height="110" rx="12"/></g>
+<text x="73" y="357" font-size="19">Receive verified state</text><text x="73" y="386" font-size="16">Webhook · headerAuth</text><text x="73" y="414" font-size="14">已验证事件，不接收员工任意命令</text>
+<text x="403" y="357" font-size="19">Validate and minimize</text><text x="403" y="386" font-size="16">Code · 8 个白名单字段</text><text x="403" y="414" font-size="14">校验状态 / 固定文案 / 有限映射</text>
+<text x="743" y="357" font-size="19">Deliver locally</text><text x="743" y="386" font-size="16">HTTP Request · 无自动重试</text><text x="743" y="414" font-size="14">POST JSON；关联本次 execution</text>
+<rect x="1115" y="325" width="250" height="110" rx="12" fill="white" stroke="#78b5a9"/>
+<text x="1133" y="361" font-size="19">独立通知接收器</text><text x="1133" y="394" font-size="16">幂等效果 / 持久回执</text>
+<g stroke="#405b72" stroke-width="2" marker-end="url(#arrow)"><path d="M345 380 H380"/><path d="M685 380 H720"/><path d="M1055 380 H1110"/></g>
+<text x="40" y="505" font-size="18">HTTP 成功 ≠ 员工已收到或阅读；响应丢失先按原通知标识查回执，不盲目重发。</text>
+<text x="40" y="532" font-size="15" fill="#687b8e">真实节点顺序与连接来自封存配置；公开图未包含凭据、内部地址或数据库 UUID。</text></g></svg>

@@ -1,0 +1,398 @@
+{
+  "source_git": "d53a835615b1feebae9d55eaed95b7aa05c43734",
+  "purpose": "CURATED READING SNAPSHOT; NOT COMPLETE EXECUTABLE REPRODUCTION",
+  "files": {
+    "README.md": {
+      "source_raw_sha256": "470fa776cfeef4af644997c6ffb6f794f3d240fdbe798716e16ed5a6dd89e5aa",
+      "normalized_lf_sha256": "470fa776cfeef4af644997c6ffb6f794f3d240fdbe798716e16ed5a6dd89e5aa",
+      "baseline_lf_match": false,
+      "provenance_kind": "presentation_created_or_revised"
+    },
+    "SOURCE-SNAPSHOT.md": {
+      "source_raw_sha256": "2535ca2cf0906c3ba9f7707e6524afc036a0f43595f75319d8ccbe6ac8df74af",
+      "normalized_lf_sha256": "2535ca2cf0906c3ba9f7707e6524afc036a0f43595f75319d8ccbe6ac8df74af",
+      "baseline_lf_match": false,
+      "provenance_kind": "presentation_created_or_revised"
+    },
+    "THIRD-PARTY-NOTICES.md": {
+      "source_raw_sha256": "3b8af553290a9e91c85e6768edcbad1eece47c64ec819276d7abbdbd5889bccb",
+      "normalized_lf_sha256": "3b8af553290a9e91c85e6768edcbad1eece47c64ec819276d7abbdbd5889bccb",
+      "baseline_lf_match": false,
+      "provenance_kind": "presentation_created_or_revised"
+    },
+    "docs/cases/n8n-enterprise-automation.md": {
+      "source_raw_sha256": "923aff2b5ee0ba8d0a4089325bd091639804b81c96fe19110a91beaa2b018683",
+      "normalized_lf_sha256": "923aff2b5ee0ba8d0a4089325bd091639804b81c96fe19110a91beaa2b018683",
+      "baseline_lf_match": false,
+      "provenance_kind": "presentation_created_or_revised"
+    },
+    "docs/cases/trusted-agent-execution.md": {
+      "source_raw_sha256": "e10e44d060ba38b60ecfea9a1dc49db1c48cdc280cadbdbc54f71aba113f2d57",
+      "normalized_lf_sha256": "e10e44d060ba38b60ecfea9a1dc49db1c48cdc280cadbdbc54f71aba113f2d57",
+      "baseline_lf_match": false,
+      "provenance_kind": "presentation_created_or_revised"
+    },
+    "docs/learn/n8n-in-serviceops-40min.md": {
+      "source_raw_sha256": "927e8b95232c5ef6ac7f1e1a11d3be9333ddbf6753c65f311ea27fe4625cd8d7",
+      "normalized_lf_sha256": "927e8b95232c5ef6ac7f1e1a11d3be9333ddbf6753c65f311ea27fe4625cd8d7",
+      "baseline_lf_match": false,
+      "provenance_kind": "presentation_created_or_revised"
+    },
+    "workflows/ticket-state.public-template.json": {
+      "source_raw_sha256": "5d08a8633ebd702744b0a0ea3b55cb68307451e9ed8817510ce4d4dcaf8cf745",
+      "normalized_lf_sha256": "592c14d00c786198e063e6f29ec372fb1df205849f77f172286227925c9a240b",
+      "baseline_lf_match": false,
+      "provenance_kind": "presentation_created_or_revised"
+    },
+    "backend/__init__.py": {
+      "source_raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalized_lf_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/agent_graph.py": {
+      "source_raw_sha256": "7421a03e94c0f55e3d9442aa6ebaf5378fcdfc74d10ef38eb6462439d619a66e",
+      "normalized_lf_sha256": "7421a03e94c0f55e3d9442aa6ebaf5378fcdfc74d10ef38eb6462439d619a66e",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/tools.py": {
+      "source_raw_sha256": "90a945513eff40934d529f35fe4d57b6ccecf0d1a353ab3b06d5d36e59c3b6c3",
+      "normalized_lf_sha256": "90a945513eff40934d529f35fe4d57b6ccecf0d1a353ab3b06d5d36e59c3b6c3",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/knowledge.py": {
+      "source_raw_sha256": "6951afc8c43676424dccbec857e2bc0db923d75e829e247f98979054a186b57f",
+      "normalized_lf_sha256": "6951afc8c43676424dccbec857e2bc0db923d75e829e247f98979054a186b57f",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/agent_trace.py": {
+      "source_raw_sha256": "bd110e8b275b192aa7895017670094f9f2b995e0babfabecabe73f9541ab0f16",
+      "normalized_lf_sha256": "bd110e8b275b192aa7895017670094f9f2b995e0babfabecabe73f9541ab0f16",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/agent_service.py": {
+      "source_raw_sha256": "6995e612e3aca833d4b37b893f0462884c67be3ff60def341e5442931ab49f78",
+      "normalized_lf_sha256": "6995e612e3aca833d4b37b893f0462884c67be3ff60def341e5442931ab49f78",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/agent_api.py": {
+      "source_raw_sha256": "1526c71e1406debad4e8ed5f191eb7ef8928008f02c7e8efecf58946f2fe95d1",
+      "normalized_lf_sha256": "1526c71e1406debad4e8ed5f191eb7ef8928008f02c7e8efecf58946f2fe95d1",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/access_graph.py": {
+      "source_raw_sha256": "aedbd5f69dcdba85637054903ce5da4d5fc9b2e783276814c25d84f23acec736",
+      "normalized_lf_sha256": "aedbd5f69dcdba85637054903ce5da4d5fc9b2e783276814c25d84f23acec736",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/access_service.py": {
+      "source_raw_sha256": "3e5657b1d46e4bb9f0cb234a5c9d568386e2a3059e3c5c5c1399812ac5f0bfd4",
+      "normalized_lf_sha256": "3e5657b1d46e4bb9f0cb234a5c9d568386e2a3059e3c5c5c1399812ac5f0bfd4",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/access_api.py": {
+      "source_raw_sha256": "deadf9ab016cde44635f6a9c8cb513ee6e252e6a7220ed962a45786ed162cb0a",
+      "normalized_lf_sha256": "deadf9ab016cde44635f6a9c8cb513ee6e252e6a7220ed962a45786ed162cb0a",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/access_models.py": {
+      "source_raw_sha256": "3dc8d826c2e13a28b199703672bba1dd5d1e15751c1a76133064b47d745fded3",
+      "normalized_lf_sha256": "3dc8d826c2e13a28b199703672bba1dd5d1e15751c1a76133064b47d745fded3",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/permission_simulator.py": {
+      "source_raw_sha256": "18c7822cd9e46cc27c6566a18a46fd16e13f1a0012667ceb0b041a2ce1b35c85",
+      "normalized_lf_sha256": "18c7822cd9e46cc27c6566a18a46fd16e13f1a0012667ceb0b041a2ce1b35c85",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/ticket_events.py": {
+      "source_raw_sha256": "7f25ad123a696499a0a4af83b700309230248ad19f25f88e5d2ab7a5aad29183",
+      "normalized_lf_sha256": "7f25ad123a696499a0a4af83b700309230248ad19f25f88e5d2ab7a5aad29183",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/event_models.py": {
+      "source_raw_sha256": "4b327ca79861c9f66aed0f6ccc38a77883d67d235b75857a2c6ce27ae45a1f89",
+      "normalized_lf_sha256": "4b327ca79861c9f66aed0f6ccc38a77883d67d235b75857a2c6ce27ae45a1f89",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/notification_receiver.py": {
+      "source_raw_sha256": "3ef6822fa58388cae15e735741782348a8ac17dcc6955b973728f9abe7f65d3a",
+      "normalized_lf_sha256": "3ef6822fa58388cae15e735741782348a8ac17dcc6955b973728f9abe7f65d3a",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/adapter.py": {
+      "source_raw_sha256": "96e5a3a141651968635d5f1e7f1944f4dcb2f09f137e3ab5b674e4176c45f611",
+      "normalized_lf_sha256": "96e5a3a141651968635d5f1e7f1944f4dcb2f09f137e3ab5b674e4176c45f611",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/service.py": {
+      "source_raw_sha256": "d03803ae72bd6e36f3439ec06551d7a88dc1e716e63dea702aef9f22c21f61b8",
+      "normalized_lf_sha256": "d03803ae72bd6e36f3439ec06551d7a88dc1e716e63dea702aef9f22c21f61b8",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/auth.py": {
+      "source_raw_sha256": "d031d3bf5f92963808a5dcbe4b32c628f29b126d837214afe9c139678286af08",
+      "normalized_lf_sha256": "d031d3bf5f92963808a5dcbe4b32c628f29b126d837214afe9c139678286af08",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/models.py": {
+      "source_raw_sha256": "ff438246357bb6d373763230cfb573714730b406b77322c7032ed350ae1f79ce",
+      "normalized_lf_sha256": "ff438246357bb6d373763230cfb573714730b406b77322c7032ed350ae1f79ce",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/ai_models.py": {
+      "source_raw_sha256": "05de0b96fe5a3de379e547232fe1dc5cbc6f13e88fc31526c916c38351b20ce2",
+      "normalized_lf_sha256": "05de0b96fe5a3de379e547232fe1dc5cbc6f13e88fc31526c916c38351b20ce2",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/checkpoints.py": {
+      "source_raw_sha256": "6a767f19232f6d85375e5e9c5f6d60aeb5b8e2736144b03fc7ce073e4ccc27ca",
+      "normalized_lf_sha256": "6a767f19232f6d85375e5e9c5f6d60aeb5b8e2736144b03fc7ce073e4ccc27ca",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/model_gateway.py": {
+      "source_raw_sha256": "6e93d5b2eb027d95ebf873c5ca3f3ffeffb59f643a3ded9b6dd10e4ec1067c72",
+      "normalized_lf_sha256": "6e93d5b2eb027d95ebf873c5ca3f3ffeffb59f643a3ded9b6dd10e4ec1067c72",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/cost.py": {
+      "source_raw_sha256": "5194beb2877f4701f3c1c7b56d0a5955732ddcfed7ce53846c48f12ab4c1edba",
+      "normalized_lf_sha256": "5194beb2877f4701f3c1c7b56d0a5955732ddcfed7ce53846c48f12ab4c1edba",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/billable_bounds.py": {
+      "source_raw_sha256": "df77f90ebd8348be083df8b4f3d0dfd470e08945b0f266807527c39238c3910b",
+      "normalized_lf_sha256": "df77f90ebd8348be083df8b4f3d0dfd470e08945b0f266807527c39238c3910b",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/db.py": {
+      "source_raw_sha256": "e0450e54acebd14d66c575ac3ceba253b2820324c66e629cad316e1b07693a83",
+      "normalized_lf_sha256": "e0450e54acebd14d66c575ac3ceba253b2820324c66e629cad316e1b07693a83",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/config.py": {
+      "source_raw_sha256": "85a65240036e9f01a2af22dc45b141181795ba403792e664075aa5ec3f02e755",
+      "normalized_lf_sha256": "85a65240036e9f01a2af22dc45b141181795ba403792e664075aa5ec3f02e755",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/ai_config.py": {
+      "source_raw_sha256": "7f54cd4aab5365860ef6b7f088cd18723b02a35d990b1e81b1acb26e915e7cef",
+      "normalized_lf_sha256": "7f54cd4aab5365860ef6b7f088cd18723b02a35d990b1e81b1acb26e915e7cef",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/main.py": {
+      "source_raw_sha256": "c4a7e6d48a3b5b0c7ad3483d7ef524aeb87d49216995beb840c34fb2c1c2d0f8",
+      "normalized_lf_sha256": "c4a7e6d48a3b5b0c7ad3483d7ef524aeb87d49216995beb840c34fb2c1c2d0f8",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/kb_catalog.py": {
+      "source_raw_sha256": "6ca7b038781661ebac49aad9d660c81880bbaefd2c36db9eedfe0ecb9166baa0",
+      "normalized_lf_sha256": "6ca7b038781661ebac49aad9d660c81880bbaefd2c36db9eedfe0ecb9166baa0",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/kb_api.py": {
+      "source_raw_sha256": "88aa5e31d71e2777f872d4de7217f06c4b3722a9fbe598ecb201d26d26b7e0e2",
+      "normalized_lf_sha256": "88aa5e31d71e2777f872d4de7217f06c4b3722a9fbe598ecb201d26d26b7e0e2",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/kb_feedback.py": {
+      "source_raw_sha256": "9d313aae1eafb43e1d70b7a8e3357fe6000f3646f5fa1c2cfc5ed3333ec8a104",
+      "normalized_lf_sha256": "9d313aae1eafb43e1d70b7a8e3357fe6000f3646f5fa1c2cfc5ed3333ec8a104",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/kb_models.py": {
+      "source_raw_sha256": "6e82c4d168748c4ba0ba873a6762db48bce368a7bb808c80de3f6aa660b26dc0",
+      "normalized_lf_sha256": "6e82c4d168748c4ba0ba873a6762db48bce368a7bb808c80de3f6aa660b26dc0",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/requirements.txt": {
+      "source_raw_sha256": "2f4d6b08330d2e2b7c75cc41234226974d63b5d3990a73f8f43b9a4a8a4d7c36",
+      "normalized_lf_sha256": "2f4d6b08330d2e2b7c75cc41234226974d63b5d3990a73f8f43b9a4a8a4d7c36",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/requirements.m2.txt": {
+      "source_raw_sha256": "1488a3d6cd2b3e1b23616cbdc361dbab1d3df0e0a779f7947635d1d8a1ea37cf",
+      "normalized_lf_sha256": "1488a3d6cd2b3e1b23616cbdc361dbab1d3df0e0a779f7947635d1d8a1ea37cf",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/requirements.lock.txt": {
+      "source_raw_sha256": "bbb0e6c27a54b3ce74443c82862681451dd0ebe4ce7e324c717ca99cbeea510d",
+      "normalized_lf_sha256": "bbb0e6c27a54b3ce74443c82862681451dd0ebe4ce7e324c717ca99cbeea510d",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/requirements.m2.lock.txt": {
+      "source_raw_sha256": "7a3caa839cda3b22ab5c1eb2d011c5b6ff0f349c3e0e40d062f60a5867395646",
+      "normalized_lf_sha256": "babe7e6be97c6eac7bf54fc621a8916e45d83277413e5902eab5c6ef2fdca437",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "backend/prompts/vpn-system-v3.txt": {
+      "source_raw_sha256": "9f2118d27ac375aaa2965c57a625ba96bb050e6a93b742e8f87daf59dde92914",
+      "normalized_lf_sha256": "9f2118d27ac375aaa2965c57a625ba96bb050e6a93b742e8f87daf59dde92914",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "frontend/Dockerfile": {
+      "source_raw_sha256": "b8a5ecafd15573983ee631e6fa60e287a7e7ad40a3b69c58d425b1db9ef10650",
+      "normalized_lf_sha256": "b8a5ecafd15573983ee631e6fa60e287a7e7ad40a3b69c58d425b1db9ef10650",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "frontend/index.html": {
+      "source_raw_sha256": "e686bdd41232eff70270060c9828da05be756b20f53186f9470903e90492c12f",
+      "normalized_lf_sha256": "e686bdd41232eff70270060c9828da05be756b20f53186f9470903e90492c12f",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "frontend/nginx.conf": {
+      "source_raw_sha256": "24389b6f6c487fc0331d39984c2f7b7fd2427cfdf546f3b28955880fe0428664",
+      "normalized_lf_sha256": "24389b6f6c487fc0331d39984c2f7b7fd2427cfdf546f3b28955880fe0428664",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "frontend/package.json": {
+      "source_raw_sha256": "4e440f967ebbf2c5c619eb85417d367a64552a441ac5c39e398610fa71b34ecb",
+      "normalized_lf_sha256": "4e440f967ebbf2c5c619eb85417d367a64552a441ac5c39e398610fa71b34ecb",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "frontend/pnpm-lock.yaml": {
+      "source_raw_sha256": "491d1187846d4dfc7ddb7bb68cde5027f7033a64034fe9cc90a81224a5f298cf",
+      "normalized_lf_sha256": "491d1187846d4dfc7ddb7bb68cde5027f7033a64034fe9cc90a81224a5f298cf",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "frontend/pnpm-workspace.yaml": {
+      "source_raw_sha256": "f75cf8a74f6b3e67871d957f6eb136b201ae34ed1ac8377a3eaf44e0036fa63d",
+      "normalized_lf_sha256": "f75cf8a74f6b3e67871d957f6eb136b201ae34ed1ac8377a3eaf44e0036fa63d",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "frontend/src/AccessRequests.tsx": {
+      "source_raw_sha256": "a7616e740f65aa7ae65387419f078f76c4038dd014588b840006078eb7ff8ebf",
+      "normalized_lf_sha256": "a7616e740f65aa7ae65387419f078f76c4038dd014588b840006078eb7ff8ebf",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "frontend/src/AgentChat.tsx": {
+      "source_raw_sha256": "278638f2978c988868a03d6466d7123c9b9d5627e5abd5668098def4fed3e640",
+      "normalized_lf_sha256": "24d99395d93274eae6d1e143a5e3aa2c819b9aabef57f619c045bf332daaeea1",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "frontend/src/AgentTrace.tsx": {
+      "source_raw_sha256": "f2cf78de7b032a1a75949ccc873cab657434d1fc37dedbb6cfa8036624a11c65",
+      "normalized_lf_sha256": "027137fa02d99b6ec78823b208a74c7c00a8720a846bccc0b2b0e9c28da4b87a",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "frontend/src/Knowledge.tsx": {
+      "source_raw_sha256": "09cf0365687f7e6dc91aa540923952821e2338fc23ad5be233f1d4782f94d61f",
+      "normalized_lf_sha256": "e9b49a4ef878a7c652db3ae5e5872d7125b81d31f289296fc1a179ee3937442b",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "frontend/src/main.tsx": {
+      "source_raw_sha256": "7f137fabb1a72b9e8babfd923d117f746ef08c5f5b71a9f268de298922a3205c",
+      "normalized_lf_sha256": "409b38dc63445edf68d741f8c6ba5f5ee3f6b1308feb4b240c5f9e5b19ea6196",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "frontend/src/style.css": {
+      "source_raw_sha256": "cd036ff1a0d30aa6fa9b3b4893cd2bb72f0ce771172ec5ab69be58dafaa514a6",
+      "normalized_lf_sha256": "463fe7d1bbef837279aff9a2193e0333cdcc45315e84b2fac63ec3e86dcd9ea8",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "frontend/tsconfig.json": {
+      "source_raw_sha256": "920cfb7a0dd4f73ab697c5d1aa2a3222486ecbb5d331979c517fc58f17b7d56a",
+      "normalized_lf_sha256": "920cfb7a0dd4f73ab697c5d1aa2a3222486ecbb5d331979c517fc58f17b7d56a",
+      "baseline_lf_match": true,
+      "provenance_kind": "unchanged_reading_source"
+    },
+    "docs/assets/portfolio/agent-trace.png": {
+      "source_raw_sha256": "71004bae73b33c50eaff082cc9d6eca3efe4a1b31edb01f15a7359e730981c8a",
+      "normalized_lf_sha256": "5cdf404373f56f9177f2082bfd1210f61d6ae94b1de5dc9ed1300d49b290306b",
+      "baseline_lf_match": false,
+      "provenance_kind": "presentation_created_or_revised"
+    },
+    "docs/assets/portfolio/employee-knowledge.png": {
+      "source_raw_sha256": "ba0feba7500e04e736d7ea0a404e9575d69bf2e01a92c11361b125819daa3cd4",
+      "normalized_lf_sha256": "40d3cf5599ba8a3b4e956c514f55cfe2cdd5f3f3ebec39d1c86971cf4a725690",
+      "baseline_lf_match": false,
+      "provenance_kind": "presentation_created_or_revised"
+    },
+    "docs/assets/portfolio/evidence-summary.json": {
+      "source_raw_sha256": "b1c036013ccd8da72fa38ccb71444be29a0d8c849d02175f6c488460168ed53e",
+      "normalized_lf_sha256": "998814b31a61ca20ac9a2c45ca79c615f946eb6d51f09b878f5fba0d6cb51861",
+      "baseline_lf_match": false,
+      "provenance_kind": "presentation_created_or_revised"
+    },
+    "docs/assets/portfolio/human-approval.png": {
+      "source_raw_sha256": "13847df3dfe65a5d08c7982ba3e772442cbf67793b5f2d432421744570a28201",
+      "normalized_lf_sha256": "967cdbd430600dc1efbe07c8281634c55c71f374d0f7e680a667283d2f15b863",
+      "baseline_lf_match": false,
+      "provenance_kind": "presentation_created_or_revised"
+    },
+    "docs/assets/portfolio/n8n-workflow.svg": {
+      "source_raw_sha256": "730e09cbba72d1f6598ab8ea1d902ccba5bfa3bc30c95d49540da9d8832ba7af",
+      "normalized_lf_sha256": "cb46e7be48cdd8fc463700b5999e04bbcb249918247fbfdcde365e988341ac36",
+      "baseline_lf_match": false,
+      "provenance_kind": "presentation_created_or_revised"
+    },
+    "docs/assets/portfolio/provenance.json": {
+      "source_raw_sha256": "c917555a980d5160c989a8b9015ca2178209063ba7d7531b3b65546f69eb293d",
+      "normalized_lf_sha256": "a9729f459f6fdf828b26eabddebbdbd2d3a232616a95c7c0725dfce35adab559",
+      "baseline_lf_match": false,
+      "provenance_kind": "presentation_created_or_revised"
+    },
+    "docs/assets/portfolio/simulated-effect.png": {
+      "source_raw_sha256": "86b528ce25c6713abfca4fd70760c0fd4426dfe1b1cd9f9d6bed398ac8b5fb9b",
+      "normalized_lf_sha256": "17ad7093b51e93695d9c8f3922258333ce81624c78576fc8906a36ffbceae391",
+      "baseline_lf_match": false,
+      "provenance_kind": "presentation_created_or_revised"
+    },
+    "docs/assets/portfolio/employee-knowledge-mobile.png": {
+      "baseline_lf_match": false,
+      "provenance_kind": "presentation_created_or_revised",
+      "source_raw_sha256": "adc6e9b4320093d15568a17ba34b2bacbe38fca1410e4b2ab8c638dc46795dde",
+      "normalized_lf_sha256": "91d63df64064ccc8638887f9bedf8d469a42f4eaf7514f427bfaf6c2847f114c"
+    }
+  },
+  "limitations": "Private runtime, cost authorization records, datasets, original evidence, credentials, initialization and several internal modules are intentionally absent.",
+  "source_git_meaning": "Application source baseline only; README, cases and sanitized assets were authored/revised for PORTFOLIO-PRESENTATION-01 on 2026-11-03."
+}

@@ -1,0 +1,217 @@
+{
+  "evidence_scope": "HISTORICAL, LOCAL SYNTHETIC ENVIRONMENTS; NOT REEXECUTED IN THIS PRESENTATION TASK",
+  "A": {
+    "alias": "A-LIVE",
+    "case_id": "M2-base-network-07",
+    "execution_git": "354c17941c5d44a84ad27ad650df1ee58e09c7fb",
+    "result": "LIVE VERIFIED — LIMITED",
+    "calls": [
+      {
+        "model": "qwen3.8-flash",
+        "input_tokens": 1264,
+        "output_tokens": 43,
+        "usage": {
+          "input_tokens": 1264,
+          "output_tokens": 43,
+          "total_tokens": 1307,
+          "reasoning_tokens_in_output": 0,
+          "cached_input_tokens": 0
+        },
+        "alias": "A-PLAN",
+        "usage_estimate_cny": 0.0011273,
+        "pre_send_max_reservation_cny": 0.8027918
+      },
+      {
+        "model": "text-embedding-v4",
+        "input_tokens": 22,
+        "output_tokens": 0,
+        "usage": {
+          "input_tokens": 22,
+          "output_tokens": 0,
+          "total_tokens": 22,
+          "reasoning_tokens_in_output": 0,
+          "cached_input_tokens": 0
+        },
+        "alias": "A-EMBED",
+        "usage_estimate_cny": 1.1e-05,
+        "pre_send_max_reservation_cny": 0.004096
+      },
+      {
+        "model": "qwen3.8-flash",
+        "input_tokens": 1709,
+        "output_tokens": 471,
+        "usage": {
+          "input_tokens": 1709,
+          "output_tokens": 471,
+          "total_tokens": 2180,
+          "reasoning_tokens_in_output": 0,
+          "cached_input_tokens": 0
+        },
+        "alias": "A-ANSWER",
+        "usage_estimate_cny": 0.0026389,
+        "pre_send_max_reservation_cny": 0.8027918
+      }
+    ],
+    "real_requests": 3,
+    "usage_estimate_cny": 0.0037772,
+    "supplier_final_invoice": "PENDING / NOT PROVEN",
+    "stages": [
+      {
+        "node": "plan",
+        "outcome": "search_vpn_knowledge"
+      },
+      {
+        "node": "retrieve",
+        "outcome": "hit"
+      },
+      {
+        "node": "respond",
+        "outcome": "provide_guidance"
+      },
+      {
+        "node": "guidance_gate",
+        "outcome": "verified"
+      }
+    ],
+    "top3": [
+      {
+        "document_id": "windows-network",
+        "title": "Fix Wi-Fi connection issues in Windows",
+        "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+        "version": "Windows 10/11; access snapshot 2026-10-14",
+        "similarity": 0.7005
+      },
+      {
+        "document_id": "windows-vpn",
+        "title": "Connect to a VPN in Windows",
+        "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/connect-to-a-vpn-in-windows",
+        "version": "Windows 10/11; access snapshot 2026-10-14",
+        "similarity": 0.5957
+      },
+      {
+        "document_id": "windows-vpn",
+        "title": "Connect to a VPN in Windows",
+        "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/connect-to-a-vpn-in-windows",
+        "version": "Windows 10/11; access snapshot 2026-10-14",
+        "similarity": 0.595
+      }
+    ],
+    "delivered_chunk_count": 3,
+    "embedding_dimension": 1024,
+    "preexisting_live_chunks": 12,
+    "GLPI_writes": 0,
+    "limitations": [
+      "One fixed case only",
+      "Managed/Always On/client applicability reminders incomplete",
+      "Earlier rejected tool name not recoverable"
+    ]
+  },
+  "B": {
+    "alias": "B-AUTO",
+    "synthetic_ticket_number": 13,
+    "source_revision": "2026-10-20T14:15:17+00:00",
+    "queue_alias": "B-QUEUE",
+    "signed_at_epoch": 1792505714,
+    "body_sha256": "4b1fd4a709892fabe859b57b6a0a2e76618960353e036dbf3c93b4866c66ff38",
+    "native_signature_verified": true,
+    "event_alias": "B-EVENT",
+    "notice_alias": "B-NOTICE",
+    "execution_alias": "B-EXECUTION",
+    "receipt_alias": "B-RECEIPT",
+    "execution_status": "success",
+    "backend_attempts": 1,
+    "delivery_outcome": "delivered",
+    "manual_queue_or_dispatch_calls": 0,
+    "lost_response_case": {
+      "alias": "B-LOST-RESPONSE",
+      "before": "delivery_unknown",
+      "after": "acknowledged",
+      "attempts_before": 1,
+      "attempts_after": 1,
+      "recovery": "Read original durable receipt; no second POST"
+    },
+    "effects": "Local durable receiver only; not a real employee reading notification"
+  },
+  "C": {
+    "alias": "C-HUMAN",
+    "real_human_approvals": 2,
+    "selected_requests_resumed": 1,
+    "simulated_effects": 1,
+    "resource": "TEST-office-share",
+    "permission": "read",
+    "version": 1,
+    "phase": "executed",
+    "attempts": 1,
+    "checkpoint_next": [],
+    "new_model_requests": 0,
+    "request_alias": "C-REQUEST",
+    "decision_alias": "C-DECISION",
+    "grant_alias": "C-GRANT",
+    "second_request_not_executed": true,
+    "enterprise_IAM": false
+  },
+  "historical_formal_evaluation": {
+    "planned_turns": 130,
+    "observed_turns": 68,
+    "not_executed_turns": 62,
+    "accepted": false
+  },
+  "source_files": {
+    "A-LIVE": {
+      "sha256": "16782fb250044675a0f97420d74d116bca8e3cbb1b21ceab31a54d567db7f46b",
+      "visibility": "ORIGINAL PRIVATE; OWNER CAN RESOLVE ALIAS"
+    },
+    "A-PREFLIGHT": {
+      "sha256": "ea8c63ee4777cba2d2389d855e62bf64e028e30dddec838338cc6ed49c6e5106",
+      "visibility": "ORIGINAL PRIVATE; OWNER CAN RESOLVE ALIAS"
+    },
+    "A-REQUESTS": {
+      "sha256": "8c49bccae8defe578bf8d074c3d133bb86e692a9a6abe2e727b349f0c9ffc426",
+      "visibility": "ORIGINAL PRIVATE; OWNER CAN RESOLVE ALIAS"
+    },
+    "EVAL-HISTORY": {
+      "sha256": "f0662ca9518f87a4304d8e5f21194ca9e29d4239b9719911e4ad396823d30b83",
+      "visibility": "ORIGINAL PRIVATE; OWNER CAN RESOLVE ALIAS"
+    },
+    "B-RECONCILIATION": {
+      "sha256": "131e09b61686e3eca5787bc3171b588c3149d2ec1e943cde740b6f374111a6af",
+      "visibility": "ORIGINAL PRIVATE; OWNER CAN RESOLVE ALIAS"
+    },
+    "B-VENDOR-CONTRACT": {
+      "sha256": "6e0bd12ad04cbdcb1f583371bfb46bb6ad4f7ae70babbd71a325c69e566582d8",
+      "visibility": "ORIGINAL PRIVATE; OWNER CAN RESOLVE ALIAS"
+    },
+    "B-PRIVACY": {
+      "sha256": "ec2571db18a273c9f705437db2e05029cd5320a030316c8c7c3e60dcf9b37f57",
+      "visibility": "ORIGINAL PRIVATE; OWNER CAN RESOLVE ALIAS"
+    },
+    "B-QUEUE": {
+      "sha256": "ab104810d1e889a45978e61083cb0c6205d1ed3768d15f2214b240315f8ae821",
+      "visibility": "ORIGINAL PRIVATE; OWNER CAN RESOLVE ALIAS"
+    },
+    "B-EVENTS": {
+      "sha256": "d05d81f2e62ccc0e5785ba8f66499ea2ff61087366b7e9e973a97937716ba0ab",
+      "visibility": "ORIGINAL PRIVATE; OWNER CAN RESOLVE ALIAS"
+    },
+    "B-N8N": {
+      "sha256": "d7747bef2841f9de2b8d1f776af1691ad3bb50901f6f5b79fc718fa97f36f08f",
+      "visibility": "ORIGINAL PRIVATE; OWNER CAN RESOLVE ALIAS"
+    },
+    "B-LOST": {
+      "sha256": "c003dde53570b1da757e3024dfa8836cadd5355dac17f1229c852e0b7043ccb0",
+      "visibility": "ORIGINAL PRIVATE; OWNER CAN RESOLVE ALIAS"
+    },
+    "B-RECOVERED": {
+      "sha256": "9defd09c649efbb28e5e7174fcfc2d9bfe0b529fe21fec4423ae22e30207f21e",
+      "visibility": "ORIGINAL PRIVATE; OWNER CAN RESOLVE ALIAS"
+    },
+    "C-HUMAN": {
+      "sha256": "99f3e54cff38ad9960611e723596de855c913ef8530ebfae79df5af9cc369a34",
+      "visibility": "ORIGINAL PRIVATE; OWNER CAN RESOLVE ALIAS"
+    },
+    "B-WORKFLOW": {
+      "sha256": "12f7faf585e60bbf6fcf44be110828c2437bdd74a962949adef3d0d58bd453d3",
+      "visibility": "ORIGINAL PRIVATE; OWNER CAN RESOLVE ALIAS"
+    }
+  }
+}

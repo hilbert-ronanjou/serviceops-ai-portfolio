@@ -1,0 +1,72 @@
+{
+  "assets": [
+    {
+      "asset": "employee-knowledge.png",
+      "source_alias": "UI-KNOWLEDGE",
+      "source_sha256": "8b33a0fa8f0c2e245b13c572882ebf5d13e77f0453a75ffea71ba9a1498a6bc6",
+      "public_sha256": "ba0feba7500e04e736d7ea0a404e9575d69bf2e01a92c11361b125819daa3cd4",
+      "kind": "REAL HISTORICAL SCREENSHOT; CROPPED",
+      "date": "2026-10-21",
+      "capture_time_note": "Historical source task record",
+      "not_a_new_execution": true,
+      "metadata": "re-encoded RGB; no source metadata"
+    },
+    {
+      "asset": "employee-knowledge-mobile.png",
+      "source_alias": "UI-KNOWLEDGE-NARROW",
+      "source_sha256": "498149439885f6c1de554cca7302eccd543bfdab007ff26501d5b1fc5ac9f6f5",
+      "public_sha256": "adc6e9b4320093d15568a17ba34b2bacbe38fca1410e4b2ab8c638dc46795dde",
+      "kind": "REAL HISTORICAL SCREENSHOT; CROPPED",
+      "date": "2026-10-21",
+      "capture_time_note": "Historical source task record",
+      "not_a_new_execution": true,
+      "metadata": "re-encoded RGB; no source metadata"
+    },
+    {
+      "asset": "agent-trace.png",
+      "source_alias": "UI-F13-A",
+      "source_sha256": "e04ad27e70357aef4badd67dfe2943a134525e8d512967919e3ee97eaa883c45",
+      "public_sha256": "71004bae73b33c50eaff082cc9d6eca3efe4a1b31edb01f15a7359e730981c8a",
+      "kind": "REAL HISTORICAL SCREENSHOT; CROPPED; OPAQUE ID REDACTION",
+      "date": null,
+      "capture_time_note": "F13 browser original has no capture timestamp",
+      "not_a_new_execution": true,
+      "metadata": "re-encoded RGB; no source metadata"
+    },
+    {
+      "asset": "human-approval.png",
+      "source_alias": "UI-C-APPROVED",
+      "source_sha256": "87bee06d427ad5f7c51a2c9305feb3e2bbcbafedd3265d8439b79bdcb0cd7238",
+      "public_sha256": "13847df3dfe65a5d08c7982ba3e772442cbf67793b5f2d432421744570a28201",
+      "kind": "REAL HISTORICAL SCREENSHOT; CROPPED",
+      "date": "2026-10-21",
+      "capture_time_note": "Historical source task record",
+      "not_a_new_execution": true,
+      "metadata": "re-encoded RGB; no source metadata"
+    },
+    {
+      "asset": "simulated-effect.png",
+      "source_alias": "UI-C-EFFECT",
+      "source_sha256": "de6ae2490c9905fd6f55312feb07e00715df283499567814558c1c24ce5363d8",
+      "public_sha256": "86b528ce25c6713abfca4fd70760c0fd4426dfe1b1cd9f9d6bed398ac8b5fb9b",
+      "kind": "REAL HISTORICAL SCREENSHOT; CROPPED; OPAQUE ID REDACTION",
+      "date": "2026-10-21",
+      "capture_time_note": "Historical source task record",
+      "not_a_new_execution": true,
+      "metadata": "re-encoded RGB; no source metadata"
+    },
+    {
+      "asset": "n8n-workflow.svg",
+      "kind": "CONFIGURATION-DERIVED DIAGRAM; NOT A UI SCREENSHOT",
+      "source_alias": "B-WORKFLOW",
+      "source_sha256": "a2570bfcddd60f0b7775303b1c37d403dfeba4f9859e9b1db45da656fe448f57",
+      "runtime_source_sha256": "12f7faf585e60bbf6fcf44be110828c2437bdd74a962949adef3d0d58bd453d3",
+      "public_sha256": "730e09cbba72d1f6598ab8ea1d902ccba5bfa3bc30c95d49540da9d8832ba7af",
+      "actual_node_count": 3,
+      "source_export_active": false,
+      "historical_runtime_active": true
+    }
+  ],
+  "redaction": "Deterministic crop/opaque rectangles only; states and outcomes not edited. Originals stay private.",
+  "schematic": "n8n workflow figure is a diagram, not a screenshot."
+}
