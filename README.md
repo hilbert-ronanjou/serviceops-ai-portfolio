@@ -6,7 +6,7 @@
 
 ![ServiceOps AI 六区工程总览：员工入口、Agent、可信后端、事件自动化、人工审批与追踪](docs/assets/portfolio/serviceops-architecture-overview.png)
 
-*逻辑架构示意；各场景基于不同隔离环境验证，非统一生产部署。* [查看可缩放 SVG](docs/assets/portfolio/serviceops-architecture-overview.svg)
+*逻辑架构示意；各场景基于不同隔离环境验证，非统一生产部署。* [查看可缩放 SVG](docs/assets/portfolio/serviceops-architecture-overview.svg)（手机可点开放大）
 
 | 核心亮点 | 工程边界 |
 |---|---|
@@ -16,6 +16,8 @@
 | **可观测性** | F13区分模型请求、后端校验与实际效果；失败、费用估算与UNKNOWN保留证据。 |
 
 [知识自助与 Agent 诊断](docs/cases/trusted-agent-execution.md) · [GLPI 事件与 n8n 通知](docs/cases/n8n-enterprise-automation.md) · [人工审批与模拟执行](docs/cases/trusted-agent-execution.md#c人工决定恢复与模拟执行)
+
+学习入口：[40分钟 n8n 实战阅读路线](docs/learn/n8n-in-serviceops-40min.md)。
 
 ![真实员工知识搜索页面：长句只返回相关资料，不冒充直接答案](docs/assets/portfolio/employee-knowledge.png)
 
