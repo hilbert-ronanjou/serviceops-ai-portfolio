@@ -3,20 +3,20 @@
   "purpose": "CURATED READING SNAPSHOT; NOT COMPLETE EXECUTABLE REPRODUCTION",
   "files": {
     "README.md": {
-      "source_raw_sha256": "470fa776cfeef4af644997c6ffb6f794f3d240fdbe798716e16ed5a6dd89e5aa",
-      "normalized_lf_sha256": "470fa776cfeef4af644997c6ffb6f794f3d240fdbe798716e16ed5a6dd89e5aa",
+      "source_raw_sha256": "a74ba195979cced9f56c984d326bc56ef280dac4f90711bde1036dddec7e7ed9",
+      "normalized_lf_sha256": "a74ba195979cced9f56c984d326bc56ef280dac4f90711bde1036dddec7e7ed9",
       "baseline_lf_match": false,
       "provenance_kind": "presentation_created_or_revised"
     },
     "SOURCE-SNAPSHOT.md": {
-      "source_raw_sha256": "2535ca2cf0906c3ba9f7707e6524afc036a0f43595f75319d8ccbe6ac8df74af",
-      "normalized_lf_sha256": "2535ca2cf0906c3ba9f7707e6524afc036a0f43595f75319d8ccbe6ac8df74af",
+      "source_raw_sha256": "898a52459f0febc784f776e6d9ecbfae902aa8766b060e05d83acfc3cf324f57",
+      "normalized_lf_sha256": "898a52459f0febc784f776e6d9ecbfae902aa8766b060e05d83acfc3cf324f57",
       "baseline_lf_match": false,
       "provenance_kind": "presentation_created_or_revised"
     },
     "THIRD-PARTY-NOTICES.md": {
-      "source_raw_sha256": "3b8af553290a9e91c85e6768edcbad1eece47c64ec819276d7abbdbd5889bccb",
-      "normalized_lf_sha256": "3b8af553290a9e91c85e6768edcbad1eece47c64ec819276d7abbdbd5889bccb",
+      "source_raw_sha256": "43abca3449b364dbeff6416a99d07519c58dfa96b9b995ca589ec94b93663f30",
+      "normalized_lf_sha256": "43abca3449b364dbeff6416a99d07519c58dfa96b9b995ca589ec94b93663f30",
       "baseline_lf_match": false,
       "provenance_kind": "presentation_created_or_revised"
     },
@@ -375,8 +375,8 @@
       "provenance_kind": "presentation_created_or_revised"
     },
     "docs/assets/portfolio/provenance.json": {
-      "source_raw_sha256": "f12c8928a4a541ec7d8e55441b56023ebd2657eb4eb01040fc655d86d27266c9",
-      "normalized_lf_sha256": "f12c8928a4a541ec7d8e55441b56023ebd2657eb4eb01040fc655d86d27266c9",
+      "source_raw_sha256": "d82e76e94819fd73305fd7bd9076664a05d08e1e81cb2fecd9fdde2cb6cbcab1",
+      "normalized_lf_sha256": "d82e76e94819fd73305fd7bd9076664a05d08e1e81cb2fecd9fdde2cb6cbcab1",
       "baseline_lf_match": false,
       "provenance_kind": "presentation_created_or_revised"
     },
@@ -391,8 +391,21 @@
       "provenance_kind": "presentation_created_or_revised",
       "source_raw_sha256": "adc6e9b4320093d15568a17ba34b2bacbe38fca1410e4b2ab8c638dc46795dde",
       "normalized_lf_sha256": "91d63df64064ccc8638887f9bedf8d469a42f4eaf7514f427bfaf6c2847f114c"
+    },
+    "docs/assets/portfolio/serviceops-architecture-overview.png": {
+      "source_raw_sha256": "8bc4c1760fc353f0178a4dcecdd28670ad0ba1d99386f548b2e7dd2274e2ffe9",
+      "normalized_lf_sha256": "2a882efe2d2e9037bd9d51e110501d94cd5029b78d8c4b42fae12ad3c4a531b9",
+      "baseline_lf_match": false,
+      "provenance_kind": "presentation_created_or_revised"
+    },
+    "docs/assets/portfolio/serviceops-architecture-overview.svg": {
+      "source_raw_sha256": "49f3c284935f87257cca1970640ce92f205bc5a0973d3843ee2300d7b7843ad4",
+      "normalized_lf_sha256": "49f3c284935f87257cca1970640ce92f205bc5a0973d3843ee2300d7b7843ad4",
+      "baseline_lf_match": false,
+      "provenance_kind": "presentation_created_or_revised"
     }
   },
   "limitations": "Private runtime, cost authorization records, datasets, original evidence, credentials, initialization and several internal modules are intentionally absent.",
-  "source_git_meaning": "Application source baseline only; README, cases and sanitized assets were authored/revised for PORTFOLIO-PRESENTATION-01 on 2026-11-03."
+  "source_git_meaning": "Application source baseline only; README, cases and sanitized assets were authored/revised for PORTFOLIO-PRESENTATION-01 on 2026-11-03.",
+  "presentation_release": "RELEASE-PORTFOLIO-01; 2026-11-03; original application source baseline unchanged"
 }

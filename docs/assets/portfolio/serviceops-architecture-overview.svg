@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="1170" viewBox="0 0 1480 1170" role="img" aria-labelledby="title desc">
+<title id="title">ServiceOps AI 工程复杂度总览</title>
+<desc id="desc">员工入口、Agent与知识、FastAPI可信后端、GLPI与n8n事件链、人工审批与模拟权限、F13可观测性。逻辑架构示意，各场景在不同隔离环境验证，非统一生产部署。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#7c8ca3"/></marker></defs>
+<style>text{font-family:'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif;fill:#182b45} .title{font-size:32px;font-weight:700}.sub{font-size:19px;fill:#52657c}.zone{font-size:23px;font-weight:700}.label{font-size:21px;font-weight:600}.detail{font-size:18px;fill:#52657c}.arrow{stroke:#7c8ca3;stroke-width:2;fill:none;marker-end:url(#arrow)}</style>
+<rect width="1480" height="1170" rx="22" fill="#f4f7fb"/>
+<text x="40" y="52" class="title">ServiceOps AI</text><text x="365" y="52" class="zone">从员工问题到可信业务效果</text>
+<text x="40" y="84" class="sub">Agent × ITSM × 企业自动化 × 人工审批 × 可追溯执行</text>
+<rect x="28" y="109" width="1424" height="126" rx="16" fill="#fff" stroke="#dbe3ee" stroke-width="1"/>
+<text x="49" y="143" class="zone">01  员工服务入口</text>
+<text x="1262" y="142" class="detail">三条路径可独立选择</text>
+<rect x="50" y="166" width="448" height="52" rx="10" fill="#f4f7fb"/>
+<text x="68" y="200" class="label">知识自助</text>
+<rect x="516" y="166" width="448" height="52" rx="10" fill="#f4f7fb"/>
+<text x="534" y="200" class="label">Agent 辅助诊断</text>
+<rect x="982" y="166" width="448" height="52" rx="10" fill="#f4f7fb"/>
+<text x="1000" y="200" class="label">直接人工工单</text>
+<rect x="28" y="251" width="1424" height="145" rx="16" fill="#fff" stroke="#dbe3ee" stroke-width="1"/>
+<text x="49" y="285" class="zone">02  Agent 与知识</text>
+<text x="1190" y="284" class="detail">模型提出意图，不拥有执行权</text>
+<rect x="50" y="309" width="330" height="72" rx="10" fill="#f4f7fb"/>
+<text x="68" y="339" class="label">LangGraph</text>
+<text x="68" y="365" class="detail">规划 · 检索 · 回答</text>
+<rect x="400" y="309" width="330" height="72" rx="10" fill="#f4f7fb"/>
+<text x="418" y="339" class="label">Qwen / LLM</text>
+<text x="418" y="365" class="detail">历史受限真实调用</text>
+<rect x="750" y="309" width="330" height="72" rx="10" fill="#f4f7fb"/>
+<text x="768" y="339" class="label">RAG / pgvector</text>
+<text x="768" y="365" class="detail">来源 · Top-K · 引用</text>
+<rect x="1100" y="309" width="330" height="72" rx="10" fill="#f4f7fb"/>
+<text x="1118" y="339" class="label">阶段工具意图</text>
+<text x="1118" y="365" class="detail">Schema 与参数契约</text>
+<rect x="28" y="412" width="1424" height="156" rx="16" fill="#edf4ff" stroke="#2763c8" stroke-width="3"/>
+<text x="49" y="446" class="zone">03  FastAPI 可信后端</text>
+<text x="1316" y="445" class="detail">核心安全边界</text>
+<rect x="50" y="473" width="330" height="72" rx="10" fill="#fff"/>
+<text x="68" y="503" class="label">身份及请求绑定</text>
+<text x="68" y="529" class="detail">可信会话 · 归属检查</text>
+<rect x="400" y="473" width="330" height="72" rx="10" fill="#fff"/>
+<text x="418" y="503" class="label">工具白名单 / Schema</text>
+<text x="418" y="529" class="detail">允许意图 ≠ 实际执行</text>
+<rect x="750" y="473" width="330" height="72" rx="10" fill="#fff"/>
+<text x="768" y="503" class="label">业务权限 / 来源复核</text>
+<text x="768" y="529" class="detail">Requester · Entity</text>
+<rect x="1100" y="473" width="330" height="72" rx="10" fill="#fff"/>
+<text x="1118" y="503" class="label">幂等、恢复与证据</text>
+<text x="1118" y="529" class="detail">PG 状态 · 费用门禁</text>
+<rect x="28" y="584" width="1424" height="145" rx="16" fill="#fff" stroke="#dbe3ee" stroke-width="1"/>
+<text x="49" y="618" class="zone">04  企业系统集成</text>
+<text x="1028" y="617" class="detail">n8n 负责自动化，不负责 Agent 决策</text>
+<rect x="50" y="642" width="245" height="72" rx="10" fill="#f4f7fb"/>
+<text x="68" y="672" class="label">GLPI 工单权威</text>
+<text x="68" y="698" class="detail">原生签名 Webhook</text>
+<rect x="325" y="642" width="245" height="72" rx="10" fill="#f4f7fb"/>
+<text x="343" y="672" class="label">FastAPI 事件处理</text>
+<text x="343" y="698" class="detail">验签 · 回查 · 持久化</text>
+<rect x="600" y="642" width="245" height="72" rx="10" fill="#f4f7fb"/>
+<text x="618" y="672" class="label">n8n 通知工作流</text>
+<text x="618" y="698" class="detail">有限字段 · 内部认证</text>
+<rect x="875" y="642" width="245" height="72" rx="10" fill="#f4f7fb"/>
+<text x="893" y="672" class="label">独立持久回执</text>
+<text x="893" y="698" class="detail">幂等 · 丢响应对账</text>
+<path d="M295 678 H323" class="arrow"/>
+<path d="M570 678 H598" class="arrow"/>
+<path d="M845 678 H873" class="arrow"/>
+<text x="1150" y="670" class="label">持久送达</text>
+<text x="1150" y="701" class="detail">≠ 员工已读</text>
+<path d="M1120 678 H1143" class="arrow"/>
+<rect x="28" y="745" width="1424" height="155" rx="16" fill="#fff" stroke="#dbe3ee" stroke-width="1"/>
+<text x="49" y="779" class="zone">05  可信人工审批</text>
+<text x="1154" y="778" class="detail">恢复只是唤醒；后端再次判断授权</text>
+<rect x="50" y="808" width="236" height="72" rx="10" fill="#f4f7fb"/>
+<text x="68" y="838" class="label">员工 TEST 申请</text>
+<text x="68" y="864" class="detail">资源 · 范围 · 版本</text>
+<rect x="314" y="808" width="236" height="72" rx="10" fill="#f4f7fb"/>
+<text x="332" y="838" class="label">Human-in-the-loop</text>
+<text x="332" y="864" class="detail">真实授权人决定</text>
+<rect x="578" y="808" width="236" height="72" rx="10" fill="#f4f7fb"/>
+<text x="596" y="838" class="label">LangGraph Resume</text>
+<text x="596" y="864" class="detail">重读可信审批状态</text>
+<rect x="842" y="808" width="236" height="72" rx="10" fill="#f4f7fb"/>
+<text x="860" y="838" class="label">后端重新复核</text>
+<text x="860" y="864" class="detail">角色 · 范围 · 有效期</text>
+<rect x="1106" y="808" width="324" height="72" rx="10" fill="#f4f7fb"/>
+<text x="1124" y="838" class="label">独立模拟权限执行</text>
+<text x="1124" y="864" class="detail">非企业 IAM · UUID 幂等</text>
+<path d="M286 844 H312" class="arrow"/>
+<path d="M550 844 H576" class="arrow"/>
+<path d="M814 844 H840" class="arrow"/>
+<path d="M1078 844 H1104" class="arrow"/>
+<rect x="28" y="916" width="1424" height="143" rx="16" fill="#fff" stroke="#dbe3ee" stroke-width="1"/>
+<text x="49" y="950" class="zone">06  可观测性与审计</text>
+<text x="1172" y="949" class="detail">读轨迹不会触发模型或业务执行</text>
+<rect x="50" y="974" width="330" height="72" rx="10" fill="#f4f7fb"/>
+<text x="68" y="1004" class="label">F13 运行轨迹</text>
+<text x="68" y="1030" class="detail">本人记录 · 脱敏展示</text>
+<rect x="400" y="974" width="330" height="72" rx="10" fill="#f4f7fb"/>
+<text x="418" y="1004" class="label">工具与校验记录</text>
+<text x="418" y="1030" class="detail">请求 / 允许 / 实际效果</text>
+<rect x="750" y="974" width="330" height="72" rx="10" fill="#f4f7fb"/>
+<text x="768" y="1004" class="label">审批与执行结果</text>
+<text x="768" y="1030" class="detail">等待 · 决定 · 恢复</text>
+<rect x="1100" y="974" width="330" height="72" rx="10" fill="#f4f7fb"/>
+<text x="1118" y="1004" class="label">失败 / UNKNOWN</text>
+<text x="1118" y="1030" class="detail">费用估算 · 风险 · 恢复</text>
+<text x="40" y="1100" class="label">逻辑架构示意｜各场景基于不同隔离环境验证，非统一生产部署。</text>
+<text x="40" y="1137" class="detail">证据边界：真实模型单例有限验证 · B/C 真实隔离集成 · 模拟权限非真实企业系统 · 普通 MODEL LIVE HOLD</text>
+</svg>

@@ -66,6 +66,24 @@
       "source_export_active": false,
       "historical_runtime_active": true,
       "public_hash_format": "UTF-8 LF; matches committed Git blob"
+    },
+    {
+      "asset": "serviceops-architecture-overview.svg",
+      "kind": "LOGICAL ARCHITECTURE DIAGRAM; NOT A RUNTIME SCREENSHOT",
+      "date": "2026-11-03",
+      "basis": "README, trusted-agent-execution and n8n-enterprise-automation at candidate 971e8ad226642513d95c8340744d6537bc4f4079",
+      "public_sha256": "49f3c284935f87257cca1970640ce92f205bc5a0973d3843ee2300d7b7843ad4",
+      "rendering": "SVG authored in project; PNG rasterized at 2x; no external images or scripts",
+      "environment_boundary": "Scenarios verified in different isolated environments; not unified production deployment"
+    },
+    {
+      "asset": "serviceops-architecture-overview.png",
+      "kind": "LOGICAL ARCHITECTURE DIAGRAM; NOT A RUNTIME SCREENSHOT",
+      "date": "2026-11-03",
+      "basis": "README, trusted-agent-execution and n8n-enterprise-automation at candidate 971e8ad226642513d95c8340744d6537bc4f4079",
+      "public_sha256": "8bc4c1760fc353f0178a4dcecdd28670ad0ba1d99386f548b2e7dd2274e2ffe9",
+      "rendering": "SVG authored in project; PNG rasterized at 2x; no external images or scripts",
+      "environment_boundary": "Scenarios verified in different isolated environments; not unified production deployment"
     }
   ],
   "redaction": "Deterministic crop/opaque rectangles only; states and outcomes not edited. Originals stay private.",

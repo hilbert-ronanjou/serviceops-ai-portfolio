@@ -4,6 +4,17 @@
 
 这是使用合成身份的本地作品集：已有真实模型单例、真实隔离软件集成与真人审批证据；不代表企业生产部署或完整 M2 质量验收。
 
+![ServiceOps AI 六区工程总览：员工入口、Agent、可信后端、事件自动化、人工审批与追踪](docs/assets/portfolio/serviceops-architecture-overview.png)
+
+*逻辑架构示意；各场景基于不同隔离环境验证，非统一生产部署。* [查看可缩放 SVG](docs/assets/portfolio/serviceops-architecture-overview.svg)
+
+| 核心亮点 | 工程边界 |
+|---|---|
+| **可信 Agent** | 模型提出阶段工具意图；FastAPI校验Schema、来源、归属与权限。 |
+| **企业事件自动化** | GLPI原生签名事件→可信后端→n8n→独立持久回执；n8n不作Agent决策。 |
+| **人工审批与恢复** | 真实授权人决定，LangGraph恢复后重新核验批准；仅执行独立TEST模拟权限。 |
+| **可观测性** | F13区分模型请求、后端校验与实际效果；失败、费用估算与UNKNOWN保留证据。 |
+
 [知识自助与 Agent 诊断](docs/cases/trusted-agent-execution.md) · [GLPI 事件与 n8n 通知](docs/cases/n8n-enterprise-automation.md) · [人工审批与模拟执行](docs/cases/trusted-agent-execution.md#c人工决定恢复与模拟执行)
 
 ![真实员工知识搜索页面：长句只返回相关资料，不冒充直接答案](docs/assets/portfolio/employee-knowledge.png)
@@ -20,7 +31,7 @@
 
 搜索、反馈和 Agent 对话都不是提交人工工单的前提。模拟权限仅作用于独立 TEST 系统。
 
-## 逻辑架构
+## 技术架构（深入阅读）
 
 ```mermaid
 flowchart LR
@@ -45,14 +56,6 @@ flowchart LR
 | F13 演示副本 | 产品页面读取脱敏历史副本；不是再次执行模型，旧副本有有效期 |
 | B/C 隔离环境 | 真实 GLPI、FastAPI、PG、n8n与独立模拟权限服务；合成人员与数据 |
 | 独立知识库演示 | 员工/技师另有独立实例；18194后来接入同一精确文章，不等于 Agent 已使用其全文 |
-
-## 三项核心工程能力
-
-**可信 Agent。** 模型只提出阶段内工具意图，后端验证工具 Schema、参数、来源引用与用户权限。`provide_guidance`不是执行修复，`propose_ticket`不是建单。[设计与真实限制](docs/cases/trusted-agent-execution.md)
-
-**企业系统自动化。** 使用 GLPI 原生签名事件和来源回查建立可信状态，再由 n8n 做有限字段处理和通知投递；通知效果以独立回执核验。[两段 HTTP 与真实故障](docs/cases/n8n-enterprise-automation.md)
-
-**可靠性与安全。** PG持久状态、请求幂等、UNKNOWN保留风险、丢响应先查原回执、模型调用先预留后发送。展示失败轨迹，保留未解决问题；不宣称全链 Exactly Once。[40分钟学习路线](docs/learn/n8n-in-serviceops-40min.md)
 
 ## 实际验证等级
 
@@ -99,4 +102,8 @@ flowchart LR
 - 模拟权限不是企业IAM；通知回执不等于员工已阅读；完整F13状态矩阵仍PARTIAL。
 - 公开候选采用经筛选的源码阅读快照，未包含私有初始化资料、原Git历史、数据库或完整内部测试记录；不能一键重跑原工程。[源码与复现边界](SOURCE-SNAPSHOT.md)
 
-[第三方归属与许可边界](THIRD-PARTY-NOTICES.md)。本项目自身的正式开源许可待所有者决定；没有自动套用MIT等许可。本轮没有创建远程仓库、push或发布Release。
+## 版权与第三方归属
+
+原创内容保留版权，主要供招聘人员阅读及作品集展示；除适用法律与GitHub服务条款允许的行为外，未主动授予复制、修改、再分发或商业使用许可。
+
+本项目不采用项目级开源许可证。第三方组件、商标和资料的权利归各自权利人，不纳入个人独占版权声明。见[第三方归属与许可边界](THIRD-PARTY-NOTICES.md)。
