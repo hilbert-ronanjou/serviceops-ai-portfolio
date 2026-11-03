@@ -61,10 +61,11 @@
       "source_alias": "B-WORKFLOW",
       "source_sha256": "a2570bfcddd60f0b7775303b1c37d403dfeba4f9859e9b1db45da656fe448f57",
       "runtime_source_sha256": "12f7faf585e60bbf6fcf44be110828c2437bdd74a962949adef3d0d58bd453d3",
-      "public_sha256": "730e09cbba72d1f6598ab8ea1d902ccba5bfa3bc30c95d49540da9d8832ba7af",
+      "public_sha256": "cb46e7be48cdd8fc463700b5999e04bbcb249918247fbfdcde365e988341ac36",
       "actual_node_count": 3,
       "source_export_active": false,
-      "historical_runtime_active": true
+      "historical_runtime_active": true,
+      "public_hash_format": "UTF-8 LF; matches committed Git blob"
     }
   ],
   "redaction": "Deterministic crop/opaque rectangles only; states and outcomes not edited. Originals stay private.",

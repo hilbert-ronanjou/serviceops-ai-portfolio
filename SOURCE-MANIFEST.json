@@ -369,14 +369,14 @@
       "provenance_kind": "presentation_created_or_revised"
     },
     "docs/assets/portfolio/n8n-workflow.svg": {
-      "source_raw_sha256": "730e09cbba72d1f6598ab8ea1d902ccba5bfa3bc30c95d49540da9d8832ba7af",
+      "source_raw_sha256": "cb46e7be48cdd8fc463700b5999e04bbcb249918247fbfdcde365e988341ac36",
       "normalized_lf_sha256": "cb46e7be48cdd8fc463700b5999e04bbcb249918247fbfdcde365e988341ac36",
       "baseline_lf_match": false,
       "provenance_kind": "presentation_created_or_revised"
     },
     "docs/assets/portfolio/provenance.json": {
-      "source_raw_sha256": "c917555a980d5160c989a8b9015ca2178209063ba7d7531b3b65546f69eb293d",
-      "normalized_lf_sha256": "a9729f459f6fdf828b26eabddebbdbd2d3a232616a95c7c0725dfce35adab559",
+      "source_raw_sha256": "f12c8928a4a541ec7d8e55441b56023ebd2657eb4eb01040fc655d86d27266c9",
+      "normalized_lf_sha256": "f12c8928a4a541ec7d8e55441b56023ebd2657eb4eb01040fc655d86d27266c9",
       "baseline_lf_match": false,
       "provenance_kind": "presentation_created_or_revised"
     },
